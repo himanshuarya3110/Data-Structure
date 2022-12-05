@@ -11,35 +11,36 @@ int main()
 	cin>>t;
 	while(t--){
 	
-	    int n;
-        cin>>n;
+	    	int n;
+        	cin>>n;
     
-	    int arr[n];
-	    for(int i=0; i<n; i++)
-    	{
-	        cin>>arr[i];
-	    }
+	    	int arr[n];
+	    	for(int i=0; i<n; i++)
+    		{
+	        	cin>>arr[i];
+		}
 	
 	    //Reversing an array
-	    int s = 0;
-        int e = n - 1;
+	    	int s = 0;
+        	int e = n - 1;
 
-        while (s <= e)
-        {
-            int temp;
-            temp=arr[e];
-            arr[e]=arr[s];
-            arr[s]=temp;
+        	while (s <= e)
+        	{
+            		int temp;
+           		temp=arr[e];
+            		arr[e]=arr[s];
+            		arr[s]=temp;
         
-            s++;
-            e--;
-        }
+            		s++;
+            		e--;
+        	}
 	
 	    //Printing array
-	    for(int i=0; i<n; i++)
-    	{
-	        cout<<arr[i]<<" ";
-	    }
+	    	for(int i=0; i<n; i++)
+    		{
+	        	cout<<arr[i]<<" ";
+	    	}
+		cout<<endl;
 	}
 	return 0;
 }
